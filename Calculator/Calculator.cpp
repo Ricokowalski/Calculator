@@ -40,6 +40,14 @@ void calculate_result(CalculationStructureType* data) {
     }
 }
 
+int findFreeMemory(CalculationStructureType* memory) {
+    for (int i = 0; i <= (sizeof(memory)/sizeof(CalculationStructureType); i++) {
+        if (*memory[i] == NULL) {
+            return i;
+        }
+    }
+}
+
 void init_new_CalcStruct() {
 
 }
